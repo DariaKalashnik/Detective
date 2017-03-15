@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/welcomecolor"
+    tools:context="com.example.android.detective.HomeActivity">
+
+    <ImageView
+        android:id="@+id/iconSher"
+        style="@style/IconStyle" />
+
+    <TextView
+        android:id="@+id/welcome"
+        style="@style/WelcomeText"
+        android:layout_width="@dimen/wrap"
+        android:layout_height="@dimen/wrap" />
+
+    <TextView
+        android:id="@+id/quiz"
+        style="@style/QuizSherlock"
+        android:layout_width="@dimen/wrap"
+        android:layout_height="@dimen/wrap" />
+
+    <EditText
+        android:id="@+id/namespace"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wrap"
+        android:onClick="namespace" />
+
+    <Button
+        android:id="@+id/startQuiz"
+        style="@style/ButtonStart"
+        android:layout_width="@dimen/wrap"
+        android:layout_height="@dimen/wrap" />
+
+
+</RelativeLayout>

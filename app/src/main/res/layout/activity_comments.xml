@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_comments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ScrollColor"
+    android:scrollbarSize="@dimen/ScrollSize"
+    android:scrollbarThumbVertical="@color/transperent"
+    tools:context="com.example.android.detective.Comments">
+
+    <RelativeLayout
+        android:layout_width="@dimen/match"
+        android:layout_height="@dimen/match">
+
+        <TextView
+            android:id="@+id/commenttext"
+            style="@style/textComments"
+            android:layout_width="@dimen/match"
+            android:layout_height="@dimen/wrap" />
+
+
+        <LinearLayout
+            android:id="@+id/linearcommnet"
+            style="@style/CheckBoxLayout"
+            android:layout_width="@dimen/wrap"
+            android:layout_height="@dimen/wrap">
+
+            <CheckBox
+                android:id="@+id/check1"
+                style="@style/Choices"
+                android:layout_width="@dimen/wrap"
+                android:layout_height="@dimen/wrap"
+                android:onClick="Check1"
+                android:text="@string/chooseSeries" />
+
+            <CheckBox
+                android:id="@+id/check2"
+                style="@style/Choices"
+                android:layout_width="@dimen/wrap"
+                android:layout_height="@dimen/wrap"
+                android:onClick="Check2"
+                android:text="@string/chooseSeries2" />
+
+            <CheckBox
+                android:id="@+id/check3"
+                style="@style/Choices"
+                android:layout_width="@dimen/wrap"
+                android:layout_height="@dimen/wrap"
+                android:onClick="Check3"
+                android:text="@string/chooseSeries3" />
+
+            <CheckBox
+                android:id="@+id/check4"
+                style="@style/Choices"
+                android:layout_width="@dimen/wrap"
+                android:layout_height="@dimen/wrap"
+                android:onClick="Check4"
+                android:text="@string/chooseSeries4" />
+
+            <CheckBox
+                android:id="@+id/check5"
+                style="@style/Choices"
+                android:layout_width="@dimen/wrap"
+                android:layout_height="@dimen/wrap"
+                android:onClick="Check5"
+                android:text="@string/chooseSeries5" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/suggestiontext"
+            style="@style/textComments2"
+            android:layout_width="@dimen/match"
+            android:layout_height="@dimen/wrap"
+            android:layout_below="@id/linearcommnet" />
+
+        <EditText
+            android:id="@+id/additionaltext"
+            style="@style/EditText2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wrap"
+            android:onClick="addmore" />
+
+        <Button
+            android:id="@+id/send"
+            style="@style/ButtonSend"
+            android:layout_width="@dimen/wrap"
+            android:layout_height="@dimen/wrap"
+            android:onClick="sendButton" />
+
+    </RelativeLayout>
+
+</ScrollView>

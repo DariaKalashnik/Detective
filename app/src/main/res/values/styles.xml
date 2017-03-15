@@ -1,0 +1,336 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/Activated</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+
+    <style name="Scroll">
+        <item name="android:background">@drawable/bluebrick</item>
+        <item name="android:scrollbarThumbVertical">@color/transperent</item>
+        <item name="android:scrollbarSize">@dimen/Scrollbar</item>
+    </style>
+
+    <style name="IconStyle">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_margin">@dimen/Sixtydimen</item>
+        <item name="android:src">@drawable/sher</item>
+        <item name="android:layout_width">@dimen/wrap</item>
+        <item name="android:layout_height">@dimen/wrap</item>
+    </style>
+
+    <style name="TextQuestion">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/ThirtyMargin</item>
+        <item name="android:background">@color/RadioColor</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:padding">@dimen/Tweentydimen</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/ThirtydimenText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextQuestionLand">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/ThirtyMargin</item>
+        <item name="android:layout_marginLeft">@dimen/SevenMargin</item>
+        <item name="android:layout_marginRight">@dimen/SevenMargin</item>
+        <item name="android:background">@color/RadioColor</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:padding">@dimen/Tweentydimen</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/ThirtydimenText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RadioGroup">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">@dimen/Tweentydimen</item>
+        <item name="android:layout_marginLeft">@dimen/Tentmargin</item>
+        <item name="android:layout_marginRight">@dimen/Tentmargin</item>
+        <item name="android:padding">@dimen/commentmargin</item>
+        <item name="android:layout_marginBottom">@dimen/FiveMargin</item>
+        <item name="android:background">@color/RadioColor</item>
+    </style>
+
+    <style name="RadioGroup2">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">@dimen/Tweentydimen</item>
+        <item name="android:padding">@dimen/ThirtyMargin</item>
+        <item name="android:layout_marginLeft">@dimen/FiveMargin</item>
+        <item name="android:layout_marginRight">@dimen/FiveMargin</item>
+        <item name="android:layout_marginBottom">@dimen/FiveMargin</item>
+        <item name="android:background">@color/RadioColor</item>
+    </style>
+
+
+    <style name="ImageButton">
+        <item name="android:background">@color/transperent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="HelloText">
+        <item name="android:textColor">@color/HelloText</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/TweentydimenText</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_marginTop">@dimen/Tentmargin</item>
+        <item name="android:layout_marginBottom">@dimen/Tentmargin</item>
+    </style>
+
+    <style name="LandTextView">
+        <item name="android:textSize">@dimen/TweentyFiveText</item>
+        <item name="android:layout_marginTop">@dimen/Tentmargin</item>
+        <item name="android:layout_marginBottom">@dimen/Tentmargin</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/HelloText</item>
+        <item name="android:fontFamily">serif-monospace</item>
+    </style>
+
+    <style name="TextResult">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textSize">@dimen/TweentyFiveText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/textresult</item>
+        <item name="android:layout_margin">@dimen/marginResult</item>
+    </style>
+
+    <style name="TextResultLand">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textSize">@dimen/TweentydimenText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/textresult</item>
+    </style>
+
+    <style name="MRadioButton">
+        <item name="android:padding">@dimen/Tentmargin</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/TweentyTwoText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:layout_width">@dimen/match</item>
+        <item name="android:layout_height">@dimen/wrap</item>
+        <item name="android:radioButtonStyle">@color/white</item>
+    </style>
+
+    <style name="WelcomeText">
+        <item name="android:textSize">@dimen/FiftyText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/welcome</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="WelcomeTextLand">
+        <item name="android:textSize">@dimen/ThirtydimenText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/welcome</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/iconSher1</item>
+    </style>
+
+    <style name="QuizSherlock">
+        <item name="android:textSize">@dimen/TweentydimenText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/quiz</item>
+        <item name="android:layout_below">@id/welcome</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="QuizSherlockLand">
+        <item name="android:textSize">@dimen/TweentyFiveText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/quiz</item>
+        <item name="android:layout_below">@id/welcome</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+
+    <style name="EditText">
+        <item name="android:textSize">@dimen/EighteenText</item>
+        <item name="android:hint">@string/input_name</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_margin">@dimen/Sixteendimen</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:layout_below">@id/quiz</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColorHint">@color/HintColor</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="EditTextLand">
+        <item name="android:textSize">@dimen/EighteenText</item>
+        <item name="android:hint">@string/input_name</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:layout_below">@id/quiz</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColorHint">@color/HintColor</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonStart">
+        <item name="android:text">@string/start_button</item>
+        <item name="android:textSize">@dimen/EighteenText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/Thirty_Sevendimen</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/namespace</item>
+        <item name="android:background">@color/ButtonColor</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">serif-monospace</item>
+    </style>
+
+    <style name="ImageClickMe">
+        <item name="android:layout_marginTop">@dimen/Tweentydimen</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:src">@drawable/blue</item>
+        <item name="android:layout_below">@id/buttonChoose3</item>
+        <item name="android:background">@color/transperent</item>
+    </style>
+
+
+    <style name="TextClickMe">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_alignTop">@id/commentbutton</item>
+        <item name="android:layout_marginTop">@dimen/Tweenty_Threedimen</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/EighteenText</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/Click_me</item>
+    </style>
+
+
+    <style name="ButtonStartLand">
+        <item name="android:text">@string/start_button</item>
+        <item name="android:textSize">@dimen/SixteenText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/marginResult</item>
+        <item name="android:layout_marginBottom">@dimen/FiveMargin</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/namespace</item>
+        <item name="android:background">@color/ButtonColor</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">serif-monospace</item>
+    </style>
+
+
+    <style name="ButtonSend">
+        <item name="android:text">Send</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/EighteenText</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/additionaltext</item>
+        <item name="android:background">@color/ButtonColor</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:layout_margin">@dimen/Tweentydimen</item>
+    </style>
+
+
+    <style name="Leavecomment">
+        <item name="android:textSize">@dimen/EighteenText</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/leavecomment</item>
+        <item name="android:layout_below">@id/buttonChoose3</item>
+        <item name="android:layout_marginTop">@dimen/commentmargin</item>
+    </style>
+
+    <style name="CheckBoxLayout">
+        <item name="android:layout_below">@id/commenttext</item>
+        <item name="android:layout_margin">@dimen/ThirtyMargin</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="textComments">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/EighteenText</item>
+        <item name="android:layout_margin">@dimen/ThirtyMargin</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:text">@string/textComment</item>
+    </style>
+
+    <style name="textComments2">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/EighteenText</item>
+        <item name="android:layout_marginLeft">@dimen/ThirtyMargin</item>
+        <item name="android:layout_marginRight">@dimen/ThirtyMargin</item>
+        <item name="android:layout_marginTop">@dimen/Tweentydimen</item>
+        <item name="android:layout_marginBottom">@dimen/Tentmargin</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:text">@string/textComment2</item>
+    </style>
+
+
+    <style name="Choices">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textSize">@dimen/SixteenText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DetectiveName">
+        <item name="android:textSize">@dimen/EighteenText</item>
+        <item name="android:fontFamily">serif-monospace</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="EditText2">
+        <item name="android:textSize">@dimen/SixteenText</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+        <item name="android:maxLength">150</item>
+        <item name="android:hint">@string/hintcomment</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:textColorHint">@color/HintColor</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_below">@id/suggestiontext</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

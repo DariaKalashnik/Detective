@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Detective</string>
+    <string name="welcome">Welcome</string>
+    <string name="quiz">to Sherlock quiz\n</string>
+    <string name="start_button">Go!</string>
+    <string name="leavecomment">Click here to leave a comment</string>
+    <string name="input_name"><font size="15">Type your secret name …</font></string>
+    <string name="question1">What question did Sherlok asked Doctor Watson twice when they first met?</string>
+    <string name="question2"> What two words does Sherlock say just before he opens Irene Adler\'s safe?</string>
+    <string name="question3">What was the case that Sherlock was talking about at Mary and John\'s wedding?</string>
+    <string name="answer_1_1">Can I borrow your phone?</string>
+    <string name="answer_1_2">What with your leg?</string>
+    <string name="answer_1_3">Do you need a rommate?</string>
+    <string name="answer_1_4">Afghanistan or Iraq?</string>
+    <string name="answer_1_5">Do you like classic music?</string>
+    <string name="answer_2_1">Geronimo</string>
+    <string name="answer_2_2">Vatican cameos</string>
+    <string name="answer_2_3">Watch out</string>
+    <string name="answer_2_4">Watch out</string>
+    <string name="answer_2_5">Careful</string>
+    <string name="answer_3_1">The Bloody Guardsman</string>
+    <string name="answer_3_2">The Missing Bride</string>
+    <string name="answer_3_3">The Disappearing Man</string>
+    <string name="answer_3_4">Doctor Watson\'s moustache</string>
+    <string name="answer_3_5">The death of Moriarty</string>
+    <string name="question4">What was the name of Sherlock\'s childhood best frind?</string>
+    <string name="answer_4_1">Albert</string>
+    <string name="answer_4_2">John</string>
+    <string name="answer_4_3">Victor</string>
+    <string name="answer_4_4">Howard</string>
+    <string name="answer_4_5">Clem</string>
+    <string name="Click_me">Click me</string>
+    <string name="title_activity_comments">Comments</string>
+    <string name="hintcomment"><font size="15">Type your comment here …</font></string>
+    <string name="textComment">Choose the topic you would like to see in the next quiz</string>
+    <string name="textComment2">Write your other comments or suggestions</string>
+    <string name="chooseSeries">Game of Thrones</string>
+    <string name="chooseSeries2">The Big Bang Theory</string>
+    <string name="chooseSeries3">Modern Family</string>
+    <string name="chooseSeries4">Doctor Who</string>
+    <string name="chooseSeries5">Agents of S.H.I.E.L.D.</string>
+</resources>

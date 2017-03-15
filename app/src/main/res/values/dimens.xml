@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="relativeMargin">15dp</dimen>
+    <dimen name="match">-1dp</dimen>
+    <dimen name="wrap">-2dp</dimen>
+    <dimen name="Scrollbar">4dp</dimen>
+    <dimen name="Tweentydimen">20dp</dimen>
+    <dimen name="Tweenty_Threedimen">23dp</dimen>
+    <dimen name="Thirty_Sevendimen">37dp</dimen>
+    <dimen name="Sixteendimen">16dp</dimen>
+    <dimen name="TweentydimenText">20sp</dimen>
+    <dimen name="TweentyTwoText">22sp</dimen>
+    <dimen name="FiftyText">50sp</dimen>
+    <dimen name="ThirtydimenText">30sp</dimen>
+    <dimen name="Sixtydimen">60sp</dimen>
+    <dimen name="FiveMargin">5dp</dimen>
+    <dimen name="SevenMargin">7dp</dimen>
+    <dimen name="TweentyFiveText">25sp</dimen>
+    <dimen name="EighteenText">18sp</dimen>
+    <dimen name="SixteenText">16sp</dimen>
+    <dimen name="marginResult">15dp</dimen>
+    <dimen name="LandmarginResult">5dp</dimen>
+    <dimen name="commentmargin">15dp</dimen>
+    <dimen name="Tentmargin">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="ScrollSize">4dp</dimen>
+    <dimen name="ThirtyMargin">30dp</dimen>
+
+</resources>

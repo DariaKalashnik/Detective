@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/Scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.detective.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLay"
+        android:layout_width="@dimen/match"
+        android:layout_height="@dimen/wrap"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/greetings"
+            style="@style/LandTextView"
+            android:layout_width="@dimen/match"
+            android:layout_height="@dimen/wrap" />
+
+        <TextView
+            android:id="@+id/textViewInfo"
+            style="@style/TextResult"
+            android:layout_width="@dimen/match"
+            android:layout_height="@dimen/wrap"
+            android:layout_below="@id/greetings" />
+
+        <ImageButton
+            android:id="@+id/buttonChoose"
+            style="@style/ImageButton"
+            android:layout_width="@dimen/wrap"
+            android:layout_height="@dimen/wrap"
+            android:layout_below="@id/textViewInfo"
+            android:onClick="onClick"
+            android:src="@drawable/sher1" />
+
+        <TextView
+            android:id="@+id/textViewInfo1"
+            style="@style/TextResult"
+            android:layout_width="@dimen/match"
+            android:layout_height="@dimen/wrap"
+            android:layout_below="@id/buttonChoose" />
+
+        <ImageButton
+            android:id="@+id/buttonChoose1"
+            style="@style/ImageButton"
+            android:layout_width="@dimen/wrap"
+            android:layout_height="@dimen/wrap"
+            android:layout_below="@id/textViewInfo1"
+            android:onClick="onClick1"
+            android:src="@drawable/sher2" />
+
+        <TextView
+            android:id="@+id/textViewInfo2"
+            style="@style/TextResult"
+            android:layout_width="@dimen/match"
+            android:layout_height="@dimen/wrap"
+            android:layout_below="@id/buttonChoose1" />
+
+        <ImageButton
+            android:id="@+id/buttonChoose2"
+            style="@style/ImageButton"
+            android:layout_width="@dimen/wrap"
+            android:layout_height="@dimen/wrap"
+            android:layout_below="@id/textViewInfo2"
+            android:onClick="onClick2"
+            android:src="@drawable/sher3" />
+
+        <TextView
+            android:id="@+id/textViewInfo3"
+            style="@style/TextResult"
+            android:layout_width="@dimen/match"
+            android:layout_height="@dimen/wrap"
+            android:layout_below="@id/buttonChoose2" />
+
+        <ImageButton
+            android:id="@+id/buttonChoose3"
+            style="@style/ImageButton"
+            android:layout_width="@dimen/wrap"
+            android:layout_height="@dimen/wrap"
+            android:layout_below="@id/textViewInfo3"
+            android:onClick="onClick3"
+            android:src="@drawable/sher4" />
+
+
+        <ImageButton
+            android:id="@+id/commentbutton"
+            style="@style/ImageClickMe"
+            android:layout_width="@dimen/wrap"
+            android:layout_height="@dimen/wrap"
+            android:onClick="onComment" />
+
+        <TextView
+            android:id="@+id/leavecomment"
+            style="@style/TextClickMe"
+            android:layout_width="@dimen/wrap"
+            android:layout_height="@dimen/wrap" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

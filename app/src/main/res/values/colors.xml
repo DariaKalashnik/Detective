@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="Activated">#143978</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#d32f2f</color>
+    <color name="radioActive">#080939</color>
+    <color name="welcomecolor">#111A29</color>
+    <color name="textresult">#FFFFFF</color>
+    <color name="transperent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="ScrollColor">#111A29</color>
+    <color name="RadioColor">#B3152536</color>
+    <color name="ButtonColor">#143978</color>
+    <color name="HintColor">#C9C9C9</color>
+    <color name="HelloText">#D6EBF5</color>
+</resources>
