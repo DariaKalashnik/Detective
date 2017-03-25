@@ -80,6 +80,7 @@
             style="@style/EditText2"
             android:layout_width="match_parent"
             android:layout_height="@dimen/wrap"
+            android:focusable="true"
             android:onClick="addmore" />
 
         <Button
@@ -87,6 +88,7 @@
             style="@style/ButtonSend"
             android:layout_width="@dimen/wrap"
             android:layout_height="@dimen/wrap"
+            android:background="@drawable/shape"
             android:onClick="sendButton" />
 
     </RelativeLayout>

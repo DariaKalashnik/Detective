@@ -5,11 +5,11 @@
 
     <application
         android:allowBackup="true"
-        android:configChanges="orientation|screenSize"
-        android:icon="@mipmap/ic_launcher"
+        android:configChanges="orientation"
+        android:icon="@mipmap/white"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,9 @@
         <activity android:name=".SolveProblem3" />
         <activity android:name=".SolveProblem4" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Comments"></activity>
+        <activity
+            android:name=".Comments"
+            android:windowSoftInputMode="stateHidden"></activity>
     </application>
 
 </manifest>

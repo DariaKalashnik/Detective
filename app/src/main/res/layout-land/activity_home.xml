@@ -7,15 +7,16 @@
     android:background="@color/welcomecolor"
     tools:context="com.example.android.detective.HomeActivity">
 
+
     <ImageView
-        android:id="@+id/iconSher"
-        style="@style/IconStyle"
-        android:src="@drawable/shericon"
+        android:id="@+id/iconSher1"
+        style="@style/LandIconStyle"
+        android:src="@drawable/sherlockland"
         tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/welcome"
-        style="@style/WelcomeText"
+        style="@style/WelcomeTextLand"
         android:layout_width="@dimen/wrap"
         android:layout_height="@dimen/wrap" />
 
@@ -27,17 +28,17 @@
 
     <EditText
         android:id="@+id/namespace"
-        style="@style/EditText"
-        android:layout_width="match_parent"
+        style="@style/EditTextLand"
+        android:layout_width="@dimen/wrap"
         android:layout_height="@dimen/wrap"
         android:onClick="namespace" />
 
     <Button
         android:id="@+id/startQuiz"
-        style="@style/ButtonStart"
+        style="@style/ButtonStartLand"
         android:layout_width="@dimen/wrap"
         android:layout_height="@dimen/wrap"
         android:background="@drawable/shape" />
 
-
 </RelativeLayout>
+

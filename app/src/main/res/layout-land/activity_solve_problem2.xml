@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_solve_problem4"
+    android:id="@+id/activity_solve_problem2"
     style="@style/Scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.detective.SolveProblem4">
+    tools:context="com.example.android.detective.SolveProblem2">
 
 
     <RelativeLayout
@@ -17,47 +17,48 @@
             style="@style/TextQuestionLand"
             android:layout_width="@dimen/match"
             android:layout_height="@dimen/wrap"
-            android:text="@string/question4" />
+            android:text="@string/question2" />
 
         <RadioGroup
-            android:id="@+id/radioGroup3"
+            android:id="@+id/radioGroup2"
             style="@style/RadioGroup2"
             android:layout_width="@dimen/match"
             android:layout_height="@dimen/wrap"
             android:layout_below="@id/textView1">
 
             <RadioButton
-                android:id="@+id/radioQ16"
+                android:id="@+id/radioQ6"
                 style="@style/MRadioButton"
-                android:onClick="onRadioClick4"
-                android:text="@string/answer_4_1" />
+                android:onClick="onRadioClick2"
+                android:text="@string/answer_2_1" />
 
             <RadioButton
-                android:id="@+id/radioQ17"
+                android:id="@+id/radioQ7"
                 style="@style/MRadioButton"
-                android:onClick="onRadioClick4"
-                android:text="@string/answer_4_2" />
+                android:onClick="onRadioClick2"
+                android:text="@string/answer_2_2" />
 
             <RadioButton
-                android:id="@+id/radioQ18"
+                android:id="@+id/radioQ8"
                 style="@style/MRadioButton"
-                android:onClick="onRadioClick4"
-                android:text="@string/answer_4_3" />
+                android:onClick="onRadioClick2"
+                android:text="@string/answer_2_3" />
 
             <RadioButton
-                android:id="@+id/radioQ19"
+                android:id="@+id/radioQ9"
                 style="@style/MRadioButton"
-                android:onClick="onRadioClick4"
-                android:text="@string/answer_4_4" />
+                android:onClick="onRadioClick2"
+                android:text="@string/answer_2_4" />
 
             <RadioButton
-                android:id="@+id/radioQ20"
+                android:id="@+id/radioQ10"
                 style="@style/MRadioButton"
-                android:onClick="onRadioClick4"
-                android:text="@string/answer_4_5" />
+                android:onClick="onRadioClick2"
+                android:text="@string/answer_2_5" />
 
         </RadioGroup>
 
     </RelativeLayout>
 
 </ScrollView>
+

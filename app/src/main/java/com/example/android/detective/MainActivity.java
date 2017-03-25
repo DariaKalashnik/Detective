@@ -1,29 +1,56 @@
 package com.example.android.detective;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
-import android.net.Uri;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.TextView;
-
 import static com.example.android.detective.R.id.greetings;
-import static com.example.android.detective.R.id.namespace;
-import static com.example.android.detective.R.id.textView1;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String Answer1 = "answer1";
+    private static final String Answer2 = "answer2";
+    private static final String Answer3 = "answer3";
+    private static final String Answer4 = "answer4";
 
     static final private int CHOOSE_ANSWER = 0;
     static final private int CHOOSE_ANSWER2 = 0;
     static final private int CHOOSE_ANSWER3 = 0;
     static final private int CHOOSE_ANSWER4 = 0;
+
+    private TextView infoTextView;
+    private TextView infoTextView1;
+    private TextView infoTextView2;
+    private TextView infoTextView3;
+
+    private Intent questionIntent;
+    private Intent questionIntent2;
+    private Intent questionIntent3;
+    private Intent questionIntent4;
+    private Intent commentIntent;
+
+
+    // Save and Restore Answers after screen rotation
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString(Answer1, (String) infoTextView.getText());
+        outState.putString(Answer2, (String) infoTextView1.getText());
+        outState.putString(Answer3, (String) infoTextView2.getText());
+        outState.putString(Answer4, (String) infoTextView3.getText());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        infoTextView.setText(savedInstanceState.getString(Answer1));
+        infoTextView1.setText(savedInstanceState.getString(Answer2));
+        infoTextView2.setText(savedInstanceState.getString(Answer3));
+        infoTextView3.setText(savedInstanceState.getString(Answer4));
+    }
 
 
     @Override
@@ -31,10 +58,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        getSupportActionBar().hide();
-
         TextView textView = (TextView) findViewById(greetings);
+        infoTextView = (TextView) findViewById(R.id.textViewInfo);
+        infoTextView1 = (TextView) findViewById(R.id.textViewInfo1);
+        infoTextView2 = (TextView) findViewById(R.id.textViewInfo2);
+        infoTextView3 = (TextView) findViewById(R.id.textViewInfo3);
+
+        questionIntent = new Intent(MainActivity.this, SolveProblem.class);
+        questionIntent2 = new Intent(MainActivity.this, SolveProblem2.class);
+        questionIntent3 = new Intent(MainActivity.this, SolveProblem3.class);
+        questionIntent4 = new Intent(MainActivity.this, SolveProblem4.class);
+        commentIntent = new Intent(MainActivity.this, Comments.class);
 
         Intent intent = getIntent();
         String str = intent.getStringExtra("");
@@ -42,34 +76,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View v) {
-        Intent questionIntent = new Intent(MainActivity.this, SolveProblem.class);
         startActivityForResult(questionIntent, CHOOSE_ANSWER);
     }
 
-
     public void onClick1(View view) {
-        Intent questionIntent2 = new Intent(MainActivity.this, SolveProblem2.class);
         startActivityForResult(questionIntent2, CHOOSE_ANSWER2);
     }
 
     public void onClick2(View v) {
-        Intent questionIntent3 = new Intent(MainActivity.this, SolveProblem3.class);
         startActivityForResult(questionIntent3, CHOOSE_ANSWER3);
     }
 
     public void onClick3(View v) {
-        Intent questionIntent4 = new Intent(MainActivity.this, SolveProblem4.class);
         startActivityForResult(questionIntent4, CHOOSE_ANSWER4);
     }
+
+
+    // Get results of Questions in the Main Activity
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
-        TextView infoTextView = (TextView) findViewById(R.id.textViewInfo);
-        TextView infoTextView1 = (TextView) findViewById(R.id.textViewInfo1);
-        TextView infoTextView2 = (TextView) findViewById(R.id.textViewInfo2);
-        TextView infoTextView3 = (TextView) findViewById(R.id.textViewInfo3);
 
 
         if (requestCode == CHOOSE_ANSWER) {
@@ -115,7 +142,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void onComment(View view) {
-        Intent commentIntent = new Intent(MainActivity.this, Comments.class);
         startActivity(commentIntent);
     }
 

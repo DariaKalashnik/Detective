@@ -21,6 +21,8 @@
     <dimen name="EighteenText">18sp</dimen>
     <dimen name="SixteenText">16sp</dimen>
     <dimen name="marginResult">15dp</dimen>
+    <dimen name="minHeightButton">40dp</dimen>
+    <dimen name="minWidthButton">70dp</dimen>
     <dimen name="LandmarginResult">5dp</dimen>
     <dimen name="commentmargin">15dp</dimen>
     <dimen name="Tentmargin">10dp</dimen>

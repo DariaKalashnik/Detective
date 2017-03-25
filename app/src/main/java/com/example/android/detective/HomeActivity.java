@@ -10,26 +10,28 @@ import android.widget.EditText;
 
 public class HomeActivity extends AppCompatActivity {
 
+    private EditText namespace;
+    private String enternamespace = "Hello detective ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        getSupportActionBar().hide();
+
+        Button startQuiz = (Button) findViewById(R.id.startQuiz);
+        namespace = (EditText) findViewById(R.id.namespace);
 
 
-        Button StartQuiz = (Button) findViewById(R.id.startQuiz);
 
         //Write a name in the HomeActivity in order to get it in the MainActivity
 
-        StartQuiz.setOnClickListener(new View.OnClickListener() {
+        startQuiz.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                EditText etLocation = (EditText) findViewById(R.id.namespace);
                 Intent intent = new Intent(HomeActivity.this, MainActivity.class);
-                intent.putExtra("", "Hello, detective " + etLocation.getText().toString());
+                intent.putExtra("", enternamespace + namespace.getText().toString());
                 startActivity(intent);
             }
         });
@@ -38,7 +40,6 @@ public class HomeActivity extends AppCompatActivity {
 
 
     public void namespace(View view) {
-        EditText namespace = (EditText) findViewById(R.id.namespace);
-        String greetings = namespace.getText().toString();
+        namespace.getText();
     }
 }

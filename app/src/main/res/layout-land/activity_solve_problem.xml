@@ -2,9 +2,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_solve_problem"
+    style="@style/Scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/Scroll"
     tools:context="com.example.android.detective.SolveProblem">
 
     <RelativeLayout
@@ -13,17 +13,17 @@
 
         <TextView
             android:id="@+id/textView1"
+            style="@style/TextQuestionLand"
             android:layout_width="@dimen/match"
             android:layout_height="@dimen/wrap"
-            style="@style/TextQuestionLand"
             android:text="@string/question1"/>
 
         <RadioGroup
             android:id="@+id/radioGroup1"
+            style="@style/RadioGroup2"
             android:layout_width="@dimen/match"
             android:layout_height="@dimen/wrap"
-            android:layout_below="@id/textView1"
-            style="@style/RadioGroup2">
+            android:layout_below="@id/textView1">
 
             <RadioButton
                 android:id="@+id/radioQ1"

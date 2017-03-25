@@ -22,7 +22,13 @@
     <style name="IconStyle">
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_margin">@dimen/Sixtydimen</item>
-        <item name="android:src">@drawable/sher</item>
+        <item name="android:layout_width">@dimen/wrap</item>
+        <item name="android:layout_height">@dimen/wrap</item>
+    </style>
+
+    <style name="LandIconStyle">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_margin">@dimen/Tweentydimen</item>
         <item name="android:layout_width">@dimen/wrap</item>
         <item name="android:layout_height">@dimen/wrap</item>
     </style>
@@ -80,10 +86,10 @@
     <style name="HelloText">
         <item name="android:textColor">@color/HelloText</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:textSize">@dimen/TweentydimenText</item>
+        <item name="android:textSize">@dimen/TweentyTwoText</item>
         <item name="android:fontFamily">serif-monospace</item>
-        <item name="android:textStyle">italic</item>
-        <item name="android:layout_marginTop">@dimen/Tentmargin</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/SevenMargin</item>
         <item name="android:layout_marginBottom">@dimen/Tentmargin</item>
     </style>
 
@@ -100,10 +106,9 @@
     <style name="TextResult">
         <item name="android:fontFamily">serif-monospace</item>
         <item name="android:textSize">@dimen/TweentyFiveText</item>
-        <item name="android:textStyle">bold</item>
         <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginLeft">@dimen/marginResult</item>
         <item name="android:textColor">@color/textresult</item>
-        <item name="android:layout_margin">@dimen/marginResult</item>
     </style>
 
     <style name="TextResultLand">
@@ -210,7 +215,6 @@
     <style name="ImageClickMe">
         <item name="android:layout_marginTop">@dimen/Tweentydimen</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:src">@drawable/blue</item>
         <item name="android:layout_below">@id/buttonChoose3</item>
         <item name="android:background">@color/transperent</item>
     </style>
@@ -239,6 +243,9 @@
         <item name="android:background">@color/ButtonColor</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:minWidth">@dimen/minWidthButton</item>
+        <item name="android:minHeight">@dimen/minHeightButton</item>
+        <item name="android:layout_margin">@dimen/marginResult</item>
     </style>
 
 

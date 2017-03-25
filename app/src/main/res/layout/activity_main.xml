@@ -15,9 +15,9 @@
 
         <TextView
             android:id="@+id/greetings"
+            style="@style/HelloText"
             android:layout_width="@dimen/match"
-            android:layout_height="@dimen/wrap"
-            style="@style/HelloText" />
+            android:layout_height="@dimen/wrap" />
 
         <TextView
             android:id="@+id/textViewInfo"
@@ -29,11 +29,12 @@
         <ImageButton
             android:id="@+id/buttonChoose"
             style="@style/ImageButton"
-            android:layout_width="@dimen/wrap"
-            android:layout_height="@dimen/wrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@id/textViewInfo"
             android:onClick="onClick"
-            android:src="@drawable/sherlock1" />
+            android:src="@drawable/newsher1"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/textViewInfo1"
@@ -49,7 +50,8 @@
             android:layout_height="@dimen/wrap"
             android:layout_below="@id/textViewInfo1"
             android:onClick="onClick1"
-            android:src="@drawable/sherlock2" />
+            android:src="@drawable/newsher2"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/textViewInfo2"
@@ -65,7 +67,8 @@
             android:layout_height="@dimen/wrap"
             android:layout_below="@id/textViewInfo2"
             android:onClick="onClick2"
-            android:src="@drawable/sherlock3" />
+            android:src="@drawable/newsher3"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/textViewInfo3"
@@ -80,8 +83,10 @@
             android:layout_width="@dimen/wrap"
             android:layout_height="@dimen/wrap"
             android:layout_below="@id/textViewInfo3"
+            android:layout_marginTop="@dimen/Tweentydimen"
             android:onClick="onClick3"
-            android:src="@drawable/sherlock4" />
+            android:src="@drawable/newsher4"
+            tools:ignore="ContentDescription" />
 
 
         <ImageButton
@@ -89,7 +94,9 @@
             style="@style/ImageClickMe"
             android:layout_width="@dimen/wrap"
             android:layout_height="@dimen/wrap"
-            android:onClick="onComment" />
+            android:onClick="onComment"
+            android:src="@drawable/arrow"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/leavecomment"

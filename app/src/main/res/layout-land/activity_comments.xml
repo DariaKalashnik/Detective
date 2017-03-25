@@ -91,7 +91,8 @@
             android:id="@+id/send"
             style="@style/ButtonSend"
             android:layout_width="@dimen/wrap"
-            android:layout_height="@dimen/wrap" />
+            android:layout_height="@dimen/wrap"
+            android:background="@drawable/shape" />
 
     </RelativeLayout>
 

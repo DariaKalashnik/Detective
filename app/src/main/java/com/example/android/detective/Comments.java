@@ -1,93 +1,135 @@
 package com.example.android.detective;
 
+
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
 
-
 public class Comments extends AppCompatActivity {
 
+
+    // Save variables
+
+    private Button sendButton;
+    private EditText addmore;
+    private CheckBox choice1;
+    private CheckBox choice2;
+    private CheckBox choice3;
+    private CheckBox choice4;
+    private CheckBox choice5;
+
+    private String result1;
+    private String result2;
+    private String result3;
+    private String result4;
+    private String result5;
+    private String AddInformation;
+    private String EmailTo = "kalashnikovadoc@gmail.com";
+    private String EmailFrom = "emailaddress@emailaddress.com";
+    private String Subject = "Feedback about the Quiz";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comments);
 
-        getSupportActionBar().hide();
+        sendButton = (Button) findViewById(R.id.send);
+        addmore = (EditText) findViewById(R.id.additionaltext);
+        choice1 = (CheckBox) findViewById(R.id.check1);
+        choice2 = (CheckBox) findViewById(R.id.check2);
+        choice3 = (CheckBox) findViewById(R.id.check3);
+        choice4 = (CheckBox) findViewById(R.id.check4);
+        choice5 = (CheckBox) findViewById(R.id.check5);
 
+
+        sendButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+
+                AddInformation = addmore.getText().toString();
+
+                // Check if the CheckBox is clicked or not
+
+                boolean Check1 = choice1.isChecked();
+
+                if (Check1) {
+                    result1 = choice1.getText().toString();
+                } else {
+                    result1 = "";
+                }
+
+                boolean Check2 = choice2.isChecked();
+
+                if (Check2) {
+                    result2 = choice2.getText().toString();
+                } else {
+                    result2 = "";
+                }
+
+                boolean Check3 = choice3.isChecked();
+
+                if (Check3) {
+                    result3 = choice3.getText().toString();
+                } else {
+                    result3 = "";
+                }
+
+
+                boolean Check4 = choice4.isChecked();
+                if (Check4) {
+                    result4 = choice4.getText().toString();
+                } else {
+                    result4 = "";
+                }
+
+                boolean Check5 = choice5.isChecked();
+
+                if (Check5) {
+                    result5 = choice5.getText().toString();
+                } else {
+                    result5 = "";
+                }
+
+                String informationContent = SendInformation(AddInformation, result1, result2,
+                        result3, result4, result5);
+
+
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("mailto:kalashnikovadoc@gmail.com"));
+                intent.putExtra(Intent.EXTRA_EMAIL, EmailTo);
+                intent.putExtra(Intent.EXTRA_EMAIL, EmailFrom);
+                intent.putExtra(android.content.Intent.EXTRA_SUBJECT, Subject);
+                intent.putExtra(Intent.EXTRA_TEXT, informationContent);
+                if (intent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(intent);
+                }
+            }
+        });
 
     }
 
-    //To save the action of the send button after the screen rotation
+    // Send information in mail
 
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        if (newConfig.orientation==Configuration.ORIENTATION_LANDSCAPE){
-            setContentView(R.layout.activity_comments);
-        }else if (newConfig.orientation==Configuration.ORIENTATION_PORTRAIT){
-            setContentView(R.layout.activity_comments_land);
-        }
-    }
-
-
-    public void sendButton(View view) {
-
-        EditText addmore = (EditText) findViewById(R.id.additionaltext);
-        String AddInformation = addmore.getText().toString();
-
-        CheckBox choice1 = (CheckBox) findViewById(R.id.check1);
-        boolean Check1 = choice1.isChecked();
-        String result1 = (String) choice1.getText();
-
-        CheckBox choice2 = (CheckBox) findViewById(R.id.check2);
-        boolean Check2 = choice2.isChecked();
-        String result2 = (String) choice2.getText();
-
-        CheckBox choice3 = (CheckBox) findViewById(R.id.check3);
-        boolean Check3 = choice3.isChecked();
-        String result3 = (String) choice3.getText();
+    private String SendInformation(String AddInformation, String result1, String result2,
+                                   String result3, String result4, String result5) {
+        String message = "For the next quiz I want:\n";
+        String informationContent = AddInformation + "\n" + message;
+        informationContent += "\n" + result1;
+        informationContent += "\n" + result2;
+        informationContent += "\n" + result3;
+        informationContent += "\n" + result4;
+        informationContent += "\n" + result5;
 
 
-        CheckBox choice4 = (CheckBox) findViewById(R.id.check4);
-        boolean Check4 = choice4.isChecked();
-        String result4 = (String) choice4.getText();
-
-        CheckBox choice5 = (CheckBox) findViewById(R.id.check5);
-        boolean Check5 = choice5.isChecked();
-        String result5 = (String) choice5.getText();
-
-        String informationContent = SendInformation(AddInformation, Check1, result1, Check2, result2,
-                Check3, result3, Check4, result4, Check5, result5);
-
-        Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.setData(Uri.parse("mailto:"));
-        intent.putExtra(Intent.EXTRA_EMAIL, "emailaddress@emailaddress.com");
-        intent.putExtra(Intent.EXTRA_TEXT, informationContent);
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(intent);
-        }
-
-    }
-
-    private String SendInformation(String AddInformation, boolean Check1, String result1, boolean Check2, String result2,
-                                   boolean Check3, String result3, boolean Check4, String result4, boolean Check5, String result5) {
-        String informationContent = AddInformation + "\n";
-        informationContent = informationContent + "\n" + result1 + ":  " + Check1;
-        informationContent = informationContent + "\n" + result2 + ":  " + Check2;
-        informationContent = informationContent + "\n" + result3 + ":  " + Check3;
-        informationContent = informationContent + "\n" + result4 + ":  " + Check4;
-        informationContent = informationContent + "\n" + result5 + ":  " + Check5;
-
-
-        Toast toast = Toast.makeText(getApplication(), "Thank you for your feedback", Toast.LENGTH_SHORT);
+        String feedback = "Thank you for your feedback";
+        Toast toast = Toast.makeText(getApplication(), feedback, Toast.LENGTH_SHORT);
         toast.show();
         return informationContent;
 
@@ -95,37 +137,34 @@ public class Comments extends AppCompatActivity {
 
 
     public void Check1(View view) {
-        CheckBox wishClick = (CheckBox) findViewById(R.id.check1);
-        wishClick.isChecked();
+        choice1.isChecked();
     }
 
 
     public void Check2(View view) {
-        CheckBox wishClick = (CheckBox) findViewById(R.id.check2);
-        wishClick.isChecked();
+        choice2.isChecked();
     }
 
 
     public void Check3(View view) {
-        CheckBox wishClick = (CheckBox) findViewById(R.id.check3);
-        wishClick.isChecked();
+        choice3.isChecked();
     }
 
 
     public void Check4(View view) {
-        CheckBox wishClick = (CheckBox) findViewById(R.id.check4);
-        wishClick.isChecked();
+        choice4.isChecked();
     }
 
     public void Check5(View view) {
-        CheckBox wishClick = (CheckBox) findViewById(R.id.check5);
-        wishClick.isChecked();
+        choice5.isChecked();
     }
 
     public void addmore(View view) {
-        EditText addmore = (EditText) findViewById(R.id.additionaltext);
-        String typecomment = addmore.getText().toString();
+        addmore.getText();
     }
 
 
+    public void sendButton(View view) {
+        sendButton.callOnClick();
+    }
 }
