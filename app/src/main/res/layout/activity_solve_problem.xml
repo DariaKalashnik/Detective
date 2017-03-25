@@ -30,7 +30,7 @@
                 style="@style/MRadioButton"
                 android:layout_width="@dimen/match"
                 android:layout_height="@dimen/wrap"
-                android:onClick="onRadioClick"
+                android:onClick="onRadioClick11"
                 android:text="@string/answer_1_1" />
 
             <RadioButton

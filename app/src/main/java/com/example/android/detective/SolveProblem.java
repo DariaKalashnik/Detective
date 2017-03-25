@@ -34,7 +34,6 @@ public class SolveProblem extends AppCompatActivity {
 
     public void onRadioClick(View v) {
         Intent answerIntent = new Intent();
-
         switch (v.getId()) {
             case R.id.radioQ1:
                 answerIntent.putExtra(CRIME, variant_1_1);
