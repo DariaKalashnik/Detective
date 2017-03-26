@@ -3,9 +3,14 @@ package com.example.android.detective;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import static android.R.attr.name;
+import static com.example.android.detective.R.id.namespace;
 
 
 public class HomeActivity extends AppCompatActivity {
@@ -33,10 +38,23 @@ public class HomeActivity extends AppCompatActivity {
                 Intent intent = new Intent(HomeActivity.this, MainActivity.class);
                 intent.putExtra("", enternamespace + namespace.getText().toString());
                 startActivity(intent);
+
+                String yoursecretname = namespace.getText().toString().trim();
+
+                // Message to the user if EdiText is empty
+
+                if (TextUtils.isEmpty(yoursecretname)||yoursecretname.length() == 0)
+
+                {
+                    Toast toast = Toast.makeText(getApplicationContext(), "You decided to stay secret", Toast.LENGTH_SHORT);
+                    toast.show();
+                }
+
             }
         });
-
     }
+
+
 
 
     public void namespace(View view) {
