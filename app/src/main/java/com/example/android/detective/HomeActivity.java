@@ -31,7 +31,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, MainActivity.class);
-                intent.putExtra("", getString(R.string.sayHello) + "" + namespace.getText().toString());
+                intent.putExtra("", getString(R.string.sayHello) + " " + namespace.getText().toString());
                 startActivity(intent);
 
                 String yoursecretname = namespace.getText().toString().trim();
