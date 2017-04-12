@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Detective</string>
-    <string name="Click_me">Натисни сюди</string>
+    <string name="Click_me">Натисни</string>
     <string name="answer_1_1">Я можу позичити ваш телефон?</string>
     <string name="answer_1_2">Що з вашою ногою?</string>
     <string name="answer_1_3">Вам потрібен сусід?</string>
@@ -23,7 +23,7 @@
     <string name="answer_4_4">Говард</string>
     <string name="answer_4_5">Клєм</string>
     <string name="chooseSeries">Гра престолів</string>
-    <string name="chooseSeries2">"Теорія великого вибуху "</string>
+    <string name="chooseSeries2">Теорія великого вибуху</string>
     <string name="chooseSeries3">Американська сімейка</string>
     <string name="chooseSeries4">Доктор Хто</string>
     <string name="chooseSeries5">Агенти ЩИТ</string>
@@ -34,10 +34,35 @@
     <string name="question2">Які слова Шерлок сказав перед тим як відкрив сейф Ірен Адлер?</string>
     <string name="question3">Про яку справу говорив Шерлок на весіллі Мері та Джона?</string>
     <string name="question4">Як звали друга дитинства Шерлока Холмса?</string>
-    <string name="quiz">Вікторина</string>
+    <string name="quiz">для датективів</string>
     <string name="start_button"><font size="12">Старт</font></string>
-    <string name="textComment">Оберіть тему яку ви хочете бачити в наступній вікторіні</string>
-    <string name="textComment2">Ваші думки та ідеї</string>
+    <string name="textComment">Оберіть тему яку ви хочете бачити в наступній вікторині</string>
+    <string name="textComment2">Внизу напишіть ваші думки або інші ідеї</string>
     <string name="title_activity_comments">Коментарі</string>
-    <string name="welcome">для датективів</string>
+    <string name="welcome"><font size="25">Вікторина</font></string>
+    <string name="sendButton"><font size="13">Відправити</font></string>
+    <string name="ToastMessage_2">Дякуємо!</string>
+    <string name="ForthenextQuiz">Наступну вікторину я хочу по серіалу</string>
+    <string name="Subject">Відгук по вікторині</string>
+    <string name="ToastMessage_1">Ви вирішили залишитися в таємниці</string>
+    <string name="message_1_1">Упс, непрвильно</string>
+    <string name="message_1_2">Гарна спроба, але ні</string>
+    <string name="message_1_3">Навіть не близько</string>
+    <string name="message_1_4">Браво датектив!</string>
+    <string name="message_1_5">Відповідь невірна</string>
+    <string name="message_2_1">Хтось тут любить Доктора Хто</string>
+    <string name="message_2_2">Браво датектив</string>
+    <string name="message_2_3">Неправильна фраза</string>
+    <string name="message_2_4">Близько, але ні</string>
+    <string name="message_2_5">Спробуй ще раз</string>
+    <string name="message_3_1">Браво датектив!</string>
+    <string name="message_3_2">Нажаль, це неправильно</string>
+    <string name="message_3_3">Це не фентезійний рассказ</string>
+    <string name="message_3_4">Важливе питання, але ні</string>
+    <string name="message_3_5">Перевір питання ще раз</string>
+    <string name="message_4_1">Гарне ім\'я, але непривально</string>
+    <string name="message_4_2">Спробуй ще раз</string>
+    <string name="message_4_3">Браво датектив!</string>
+    <string name="message_4_4">Ні, це було інше ім\'я</string>
+    <string name="message_4_5">Дуже далеко від правди</string>
 </resources>

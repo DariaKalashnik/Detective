@@ -33,7 +33,6 @@ public class Comments extends AppCompatActivity {
     private String AddInformation;
     private String EmailTo = "kalashnikovadoc@gmail.com";
     private String EmailFrom = "emailaddress@emailaddress.com";
-    private String Subject = "Feedback about the Quiz";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,7 +104,7 @@ public class Comments extends AppCompatActivity {
                 intent.setData(Uri.parse("mailto:kalashnikovadoc@gmail.com"));
                 intent.putExtra(Intent.EXTRA_EMAIL, EmailTo);
                 intent.putExtra(Intent.EXTRA_EMAIL, EmailFrom);
-                intent.putExtra(android.content.Intent.EXTRA_SUBJECT, Subject);
+                intent.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.Subject));
                 intent.putExtra(Intent.EXTRA_TEXT, informationContent);
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
@@ -119,7 +118,7 @@ public class Comments extends AppCompatActivity {
 
     private String SendInformation(String AddInformation, String result1, String result2,
                                    String result3, String result4, String result5) {
-        String message = "For the next quiz I want:\n";
+        String message = getString(R.string.ForthenextQuiz);
         String informationContent = AddInformation + "\n" + message;
         informationContent += "\n" + result1;
         informationContent += "\n" + result2;
@@ -128,7 +127,7 @@ public class Comments extends AppCompatActivity {
         informationContent += "\n" + result5;
 
 
-        String feedback = "Thank you for your feedback";
+        String feedback = getString(R.string.ToastMessage_2);
         Toast toast = Toast.makeText(getApplication(), feedback, Toast.LENGTH_SHORT);
         toast.show();
         return informationContent;

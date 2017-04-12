@@ -9,14 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import static android.R.attr.name;
-import static com.example.android.detective.R.id.namespace;
-
-
 public class HomeActivity extends AppCompatActivity {
 
     private EditText namespace;
-    private String enternamespace = "Hello detective ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +31,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, MainActivity.class);
-                intent.putExtra("", enternamespace + namespace.getText().toString());
+                intent.putExtra("", getString(R.string.sayHello) + namespace.getText().toString());
                 startActivity(intent);
 
                 String yoursecretname = namespace.getText().toString().trim();
@@ -46,7 +41,7 @@ public class HomeActivity extends AppCompatActivity {
                 if (TextUtils.isEmpty(yoursecretname)||yoursecretname.length() == 0)
 
                 {
-                    Toast toast = Toast.makeText(getApplicationContext(), "You decided to stay secret", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.ToastMessage_1), Toast.LENGTH_SHORT);
                     toast.show();
                 }
 

@@ -13,13 +13,6 @@ public class SolveProblem2 extends AppCompatActivity {
 
     // Initialize string values for different answers
 
-    public String variant_2_1 = "Someone here likes Doctor Who";
-    public String variant_2_2 = "Correct. You are brilliant detective!";
-    public String variant_2_3 = "Sorry, but it is not that phrase";
-    public String variant_2_4 = "Quite close, but no";
-    public String variant_2_5 = "Always be careful with your answers";
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,19 +26,19 @@ public class SolveProblem2 extends AppCompatActivity {
 
         switch (v.getId()) {
             case R.id.radioQ6:
-                answerIntent2.putExtra(CRIME2, variant_2_1);
+                answerIntent2.putExtra(CRIME2, getString(R.string.message_2_1));
                 break;
             case R.id.radioQ7:
-                answerIntent2.putExtra(CRIME2, variant_2_2);
+                answerIntent2.putExtra(CRIME2, getString(R.string.message_2_2));
                 break;
             case R.id.radioQ8:
-                answerIntent2.putExtra(CRIME2, variant_2_3);
+                answerIntent2.putExtra(CRIME2, getString(R.string.message_2_3));
                 break;
             case R.id.radioQ9:
-                answerIntent2.putExtra(CRIME2, variant_2_4);
+                answerIntent2.putExtra(CRIME2, getString(R.string.message_2_4));
                 break;
             case R.id.radioQ10:
-                answerIntent2.putExtra(CRIME2, variant_2_5);
+                answerIntent2.putExtra(CRIME2, getString(R.string.message_2_5));
                 break;
 
             default:

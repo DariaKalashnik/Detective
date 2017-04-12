@@ -250,7 +250,7 @@
 
 
     <style name="ButtonSend">
-        <item name="android:text">Send</item>
+        <item name="android:text">@string/sendButton</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">@dimen/EighteenText</item>
         <item name="android:layout_centerHorizontal">true</item>
