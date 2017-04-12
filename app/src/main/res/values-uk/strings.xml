@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Detective</string>
+    <string name="Click_me">Натисни сюди</string>
+    <string name="answer_1_1">Я можу позичити ваш телефон?</string>
+    <string name="answer_1_2">Що з вашою ногою?</string>
+    <string name="answer_1_3">Вам потрібен сусід?</string>
+    <string name="answer_1_4">Афганістан чи Ірак?</string>
+    <string name="answer_1_5">Вам подобається класична музика?</string>
+    <string name="answer_2_2">Ватиканські камеї</string>
+    <string name="answer_2_1">Джеронімо</string>
+    <string name="answer_2_3">Озирніться</string>
+    <string name="answer_2_5">Обережно</string>
+    <string name="answer_2_4">Треба було поснідати</string>
+    <string name="answer_3_1">Кривавий Стражник</string>
+    <string name="answer_3_2">Зникла наречена</string>
+    <string name="answer_3_3">Людина без лиця</string>
+    <string name="answer_3_4">Вуса доктора Ватсона</string>
+    <string name="answer_3_5">Смерть Моріарті</string>
+    <string name="answer_4_1">Альберт</string>
+    <string name="answer_4_2">Джон</string>
+    <string name="answer_4_3">Віктор</string>
+    <string name="answer_4_4">Говард</string>
+    <string name="answer_4_5">Клєм</string>
+    <string name="chooseSeries">Гра престолів</string>
+    <string name="chooseSeries2">"Теорія великого вибуху "</string>
+    <string name="chooseSeries3">Американська сімейка</string>
+    <string name="chooseSeries4">Доктор Хто</string>
+    <string name="chooseSeries5">Агенти ЩИТ</string>
+    <string name="hintcomment">Ваш коментар …</string>
+    <string name="input_name">Ваше таємне ім\'я …</string>
+    <string name="leavecomment">Натисніть сюди щоб залишити коментарі</string>
+    <string name="question1">Яке питання Шерлок задав доктору Ватсону два рази в їх першу зузстріч?</string>
+    <string name="question2">Які слова Шерлок сказав перед тим як відкрив сейф Ірен Адлер?</string>
+    <string name="question3">Про яку справу говорив Шерлок на весіллі Мері та Джона?</string>
+    <string name="question4">Як звали друга дитинства Шерлока Холмса?</string>
+    <string name="quiz">Вікторина</string>
+    <string name="start_button"><font size="12">Старт</font></string>
+    <string name="textComment">Оберіть тему яку ви хочете бачити в наступній вікторіні</string>
+    <string name="textComment2">Ваші думки та ідеї</string>
+    <string name="title_activity_comments">Коментарі</string>
+    <string name="welcome">для датективів</string>
+</resources>
