@@ -40,7 +40,7 @@
     <string name="chooseSeries4">Doctor Who</string>
     <string name="chooseSeries5">Agents of S.H.I.E.L.D.</string>
     <string name="sendButton">Send</string>
-    <string name="sayHello">Hello detective </string>
+    <string name="sayHello">Hello detective</string>
     <string name="ForthenextQuiz">For the next quiz I want:\n</string>
     <string name="Subject">Feedback about the Quiz</string>
     <string name="ToastMessage_2">Thank you for your feedback</string>
