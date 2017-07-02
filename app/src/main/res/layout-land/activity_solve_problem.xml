@@ -8,56 +8,48 @@
     tools:context="com.example.android.detective.SolveProblem">
 
     <RelativeLayout
-        android:layout_width="@dimen/match"
-        android:layout_height="@dimen/match">
+        style="@style/QuestionsLayout">
 
         <TextView
             android:id="@+id/textView1"
-            style="@style/TextQuestionLand"
-            android:layout_width="@dimen/match"
-            android:layout_height="@dimen/wrap"
-            android:text="@string/question1"/>
+            style="@style/TextQuestion.Land"
+            android:text="@string/question1" />
 
         <RadioGroup
             android:id="@+id/radioGroup1"
-            style="@style/RadioGroup2"
-            android:layout_width="@dimen/match"
-            android:layout_height="@dimen/wrap"
+            style="@style/RadioGroup.Land"
             android:layout_below="@id/textView1">
 
             <RadioButton
                 android:id="@+id/radioQ1"
-                style="@style/MRadioButton"
+                style="@style/MButton"
                 android:onClick="onRadioClick"
                 android:text="@string/answer_1_1" />
 
             <RadioButton
                 android:id="@+id/radioQ2"
-                style="@style/MRadioButton"
+                style="@style/MButton"
                 android:onClick="onRadioClick"
                 android:text="@string/answer_1_2" />
 
             <RadioButton
                 android:id="@+id/radioQ3"
-                style="@style/MRadioButton"
+                style="@style/MButton"
                 android:onClick="onRadioClick"
                 android:text="@string/answer_1_3" />
 
             <RadioButton
                 android:id="@+id/radioQ4"
-                style="@style/MRadioButton"
+                style="@style/MButton"
                 android:onClick="onRadioClick"
                 android:text="@string/answer_1_4" />
 
             <RadioButton
                 android:id="@+id/radioQ5"
-                style="@style/MRadioButton"
+                style="@style/MButton"
                 android:onClick="onRadioClick"
                 android:text="@string/answer_1_5" />
 
         </RadioGroup>
-
     </RelativeLayout>
-
-
 </ScrollView>

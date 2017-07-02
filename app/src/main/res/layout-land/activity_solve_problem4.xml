@@ -7,57 +7,23 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.detective.SolveProblem4">
 
-
-    <RelativeLayout
-        android:layout_width="@dimen/match"
-        android:layout_height="@dimen/match">
+    <RelativeLayout style="@style/QuestionsLayout">
 
         <TextView
             android:id="@+id/textView1"
-            style="@style/TextQuestionLand"
-            android:layout_width="@dimen/match"
-            android:layout_height="@dimen/wrap"
+            style="@style/TextQuestion"
             android:text="@string/question4" />
 
-        <RadioGroup
-            android:id="@+id/radioGroup3"
-            style="@style/RadioGroup2"
-            android:layout_width="@dimen/match"
-            android:layout_height="@dimen/wrap"
-            android:layout_below="@id/textView1">
+        <EditText
+            android:id="@+id/answer"
+            style="@style/EditText.Answer"
+            android:onClick="answer" />
 
-            <RadioButton
-                android:id="@+id/radioQ16"
-                style="@style/MRadioButton"
-                android:onClick="onRadioClick4"
-                android:text="@string/answer_4_1" />
-
-            <RadioButton
-                android:id="@+id/radioQ17"
-                style="@style/MRadioButton"
-                android:onClick="onRadioClick4"
-                android:text="@string/answer_4_2" />
-
-            <RadioButton
-                android:id="@+id/radioQ18"
-                style="@style/MRadioButton"
-                android:onClick="onRadioClick4"
-                android:text="@string/answer_4_3" />
-
-            <RadioButton
-                android:id="@+id/radioQ19"
-                style="@style/MRadioButton"
-                android:onClick="onRadioClick4"
-                android:text="@string/answer_4_4" />
-
-            <RadioButton
-                android:id="@+id/radioQ20"
-                style="@style/MRadioButton"
-                android:onClick="onRadioClick4"
-                android:text="@string/answer_4_5" />
-
-        </RadioGroup>
+        <Button
+            android:id="@+id/checkIt"
+            android:layout_below="@id/answer"
+            style="@style/ButtonStart.Check"
+            android:onClick="checkIt" />
 
     </RelativeLayout>
-
 </ScrollView>

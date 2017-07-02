@@ -7,57 +7,53 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.detective.SolveProblem3">
 
-
-    <RelativeLayout
-        android:layout_width="@dimen/match"
-        android:layout_height="@dimen/match">
+    <RelativeLayout style="@style/QuestionsLayout">
 
         <TextView
             android:id="@+id/textView1"
-            style="@style/TextQuestionLand"
-            android:layout_width="@dimen/match"
-            android:layout_height="@dimen/wrap"
+            style="@style/TextQuestion.Land"
             android:text="@string/question3" />
 
-        <RadioGroup
-            android:id="@+id/radioGroup3"
-            style="@style/RadioGroup2"
-            android:layout_width="@dimen/match"
-            android:layout_height="@dimen/match"
+        <LinearLayout
+            android:id="@+id/checkBoxGroup"
+            style="@style/CheckBoxLayout.Questions"
             android:layout_below="@id/textView1">
 
-            <RadioButton
-                android:id="@+id/radioQ11"
-                style="@style/MRadioButton"
-                android:onClick="onRadioClick3"
+            <CheckBox
+                android:id="@+id/checkbox1"
+                style="@style/MButton"
+                android:onClick="onCheckBox"
                 android:text="@string/answer_3_1" />
 
-            <RadioButton
-                android:id="@+id/radioQ12"
-                style="@style/MRadioButton"
-                android:onClick="onRadioClick3"
+            <CheckBox
+                android:id="@+id/checkbox2"
+                style="@style/MButton"
+                android:onClick="onCheckBox2"
                 android:text="@string/answer_3_2" />
 
-            <RadioButton
-                android:id="@+id/radioQ13"
-                style="@style/MRadioButton"
-                android:onClick="onRadioClick3"
+            <CheckBox
+                android:id="@+id/checkbox3"
+                style="@style/MButton"
+                android:onClick="onCheckBox3"
                 android:text="@string/answer_3_3" />
 
-            <RadioButton
-                android:id="@+id/radioQ14"
-                style="@style/MRadioButton"
-                android:onClick="onRadioClick3"
+            <CheckBox
+                android:id="@+id/checkbox4"
+                style="@style/MButton"
+                android:onClick="onCheckBox4"
                 android:text="@string/answer_3_4" />
 
-            <RadioButton
-                android:id="@+id/radioQ15"
-                style="@style/MRadioButton"
-                android:onClick="onRadioClick3"
+            <CheckBox
+                android:id="@+id/checkbox5"
+                style="@style/MButton"
+                android:onClick="onCheckBox5"
                 android:text="@string/answer_3_5" />
+        </LinearLayout>
 
-        </RadioGroup>
+        <Button
+            android:id="@+id/checkIt"
+            style="@style/ButtonStart.Check"
+            android:onClick="checkIt" />
 
     </RelativeLayout>
-
 </ScrollView>

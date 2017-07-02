@@ -3,14 +3,18 @@
     <string name="welcome">Welcome</string>
     <string name="quiz">to Sherlock quiz\n</string>
     <string name="start_button">Go!</string>
+    <string name="check_button">Check</string>
+    <string name="hintAnswer">Type your answer here</string>
     <string name="leavecomment">Click here to leave a comment</string>
-    <string name="input_name"><font size="15">Type your secret name …</font></string>
-    <string name="question1">What question did Sherlok asked Doctor Watson twice when they first met?</string>
+    <string name="correct">Correct. You are brilliant detective!</string>
+    <string name="blank">Don`t give up, try to guess</string>
+    <string name="input_name"><font size="15">Type your name …</font></string>
+    <string name="question1">What question did Sherlock asked Doctor Watson twice when they first met?</string>
     <string name="question2"> What two words does Sherlock say just before he opens Irene Adler\'s safe?</string>
-    <string name="question3">What was the case that Sherlock was talking about at Mary and John\'s wedding?</string>
+    <string name="question3">During Mary and John\'s wedding, Sherlock:</string>
     <string name="answer_1_1">Can I borrow your phone?</string>
     <string name="answer_1_2">What with your leg?</string>
-    <string name="answer_1_3">Do you need a rommate?</string>
+    <string name="answer_1_3">Do you need a roommate?</string>
     <string name="answer_1_4">Afghanistan or Iraq?</string>
     <string name="answer_1_5">Do you like classic music?</string>
     <string name="answer_2_1">Geronimo</string>
@@ -18,11 +22,11 @@
     <string name="answer_2_3">Keep eyes open</string>
     <string name="answer_2_4">Watch out</string>
     <string name="answer_2_5">Careful</string>
-    <string name="answer_3_1">The Bloody Guardsman</string>
-    <string name="answer_3_2">The Missing Bride</string>
-    <string name="answer_3_3">The Disappearing Man</string>
-    <string name="answer_3_4">Doctor Watson\'s moustache</string>
-    <string name="answer_3_5">The death of Moriarty</string>
+    <string name="answer_3_1">Said the wedding toast</string>
+    <string name="answer_3_2">Solved the crime</string>
+    <string name="answer_3_3">Disappeared suddenly</string>
+    <string name="answer_3_4">Started the fight</string>
+    <string name="answer_3_5">Made the proposal to his girlfriend</string>
     <string name="question4">What was the name of Sherlock\'s childhood best frind?</string>
     <string name="answer_4_1">Albert</string>
     <string name="answer_4_2">John</string>
@@ -48,21 +52,13 @@
     <string name="message_1_1">Oops, you are wrong</string>
     <string name="message_1_2">Good try, but it is incorrect</string>
     <string name="message_1_3">It is not even close</string>
-    <string name="message_1_4">Correct. You are brilliant detective!</string>
+    <string name="message_1_4">@string/correct</string>
     <string name="message_1_5">Classic music is good, but your answer is not</string>
     <string name="message_2_1">Someone here likes Doctor Who</string>
-    <string name="message_2_2">Correct. You are brilliant detective!</string>
+    <string name="message_2_2">@string/correct</string>
     <string name="message_2_3">Sorry, but it is not that phrase</string>
     <string name="message_2_4">Quite close, but no</string>
     <string name="message_2_5">Always be careful with your answers</string>
-    <string name="message_3_1">Correct. You are brilliant detective!</string>
-    <string name="message_3_2">Wrong answer</string>
-    <string name="message_3_3">It is not a fantasy series</string>
-    <string name="message_3_4">Important issue, but not at this time</string>
-    <string name="message_3_5">And we all miss him, but the answer is incorrect</string>
-    <string name="message_4_1">Nice name, but it is wrong</string>
-    <string name="message_4_2">Try again</string>
-    <string name="message_4_3">Correct. You are brilliant detective!</string>
-    <string name="message_4_4">No, it wasn`t that name</string>
-    <string name="message_4_5">Too far from the truth</string>
+    <string name="message_3_1">Wrong answer</string>
+    <string name="message_4_1">Sorry, it is a wrong name</string>
 </resources>

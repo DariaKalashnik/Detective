@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_home"
     android:layout_width="match_parent"
@@ -7,38 +7,32 @@
     android:background="@color/welcomecolor"
     tools:context="com.example.android.detective.HomeActivity">
 
+    <LinearLayout
+        style="@style/LinearLayout">
 
-    <ImageView
-        android:id="@+id/iconSher1"
-        style="@style/LandIconStyle"
-        android:src="@drawable/sherlockland"
-        tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/iconSher1"
+            style="@style/IconStyle.Land"
+            android:src="@drawable/sherlockland"
+            tools:ignore="ContentDescription" />
 
-    <TextView
-        android:id="@+id/welcome"
-        style="@style/WelcomeTextLand"
-        android:layout_width="@dimen/wrap"
-        android:layout_height="@dimen/wrap" />
+        <TextView
+            android:id="@+id/welcome"
+            style="@style/WelcomeText.Land" />
 
-    <TextView
-        android:id="@+id/quiz"
-        style="@style/QuizSherlock"
-        android:layout_width="@dimen/wrap"
-        android:layout_height="@dimen/wrap" />
+        <TextView
+            android:id="@+id/quiz"
+            style="@style/QuizSherlock" />
 
-    <EditText
-        android:id="@+id/namespace"
-        style="@style/EditTextLand"
-        android:layout_width="@dimen/wrap"
-        android:layout_height="@dimen/wrap"
-        android:onClick="namespace" />
+        <EditText
+            android:id="@+id/namespace"
+            style="@style/EditText"
+            android:onClick="namespace" />
 
-    <Button
-        android:id="@+id/startQuiz"
-        style="@style/ButtonStartLand"
-        android:layout_width="@dimen/wrap"
-        android:layout_height="@dimen/wrap"
-        android:background="@drawable/shape" />
-
-</RelativeLayout>
+        <Button
+            android:id="@+id/startQuiz"
+            style="@style/ButtonStart.Land"
+            android:background="@drawable/shape" />
+    </LinearLayout>
+</ScrollView>
 

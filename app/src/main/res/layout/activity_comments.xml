@@ -54,7 +54,6 @@
 
 
         <TextView
-            android:labelFor="@id/additionaltext"
             android:id="@+id/suggestiontext"
             style="@style/textComments.two" />
 

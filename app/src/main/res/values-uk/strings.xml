@@ -56,14 +56,10 @@
     <string name="message_2_4">Близько, але ні</string>
     <string name="message_2_5">Спробуй ще раз</string>
     <string name="message_3_1">Браво датектив!</string>
-    <string name="message_3_2">Нажаль, це неправильно</string>
-    <string name="message_3_3">Це не фентезійний рассказ</string>
-    <string name="message_3_4">Важливе питання, але ні</string>
-    <string name="message_3_5">Перевір питання ще раз</string>
-    <string name="message_4_1">Гарне ім\'я, але непривально</string>
-    <string name="message_4_2">Спробуй ще раз</string>
-    <string name="message_4_3">Браво датектив!</string>
-    <string name="message_4_4">Ні, це було інше ім\'я</string>
-    <string name="message_4_5">Дуже далеко від правди</string>
     <string name="sayHello">Привіт датектив</string>
+    <string name="message_4_1">На жаль, це неправильно</string>
+    <string name="blank">Ти навіть не намагався</string>
+    <string name="check_button">Перевірити</string>
+    <string name="correct">Браво датектив!</string>
+    <string name="hintAnswer">Ваша відповідь</string>
 </resources>

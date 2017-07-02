@@ -1,39 +1,49 @@
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorControlNormal">@color/white</item>
         <item name="colorControlActivated">@color/Activated</item>
         <item name="android:windowNoTitle">true</item>
-
     </style>
 
-
+    <!-- Scroll bar -->
     <style name="Scroll">
         <item name="android:background">@drawable/bluebrick</item>
-        <item name="android:scrollbarThumbVertical">@color/transperent</item>
+        <item name="android:scrollbarThumbVertical">@color/transparent</item>
         <item name="android:scrollbarSize">@dimen/Scrollbar</item>
     </style>
 
+    <!-- Icon on the Start page -->
     <style name="IconStyle">
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_margin">@dimen/Sixtydimen</item>
-        <item name="android:layout_width">@dimen/wrap</item>
-        <item name="android:layout_height">@dimen/wrap</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="LandIconStyle">
-        <item name="android:layout_centerHorizontal">true</item>
+    <!-- LinearLayout style -->
+    <style name="LinearLayout">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <!-- Icon on the Start page (landscape) -->
+    <style name="IconStyle.Land">
         <item name="android:layout_margin">@dimen/Tweentydimen</item>
-        <item name="android:layout_width">@dimen/wrap</item>
-        <item name="android:layout_height">@dimen/wrap</item>
     </style>
 
+    <!-- Questions` style -->
     <style name="TextQuestion">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_marginTop">@dimen/ThirtyMargin</item>
         <item name="android:background">@color/RadioColor</item>
@@ -44,20 +54,16 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="TextQuestionLand">
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginTop">@dimen/ThirtyMargin</item>
+    <!-- Questions` style (landscape) -->
+    <style name="TextQuestion.Land">
         <item name="android:layout_marginLeft">@dimen/SevenMargin</item>
         <item name="android:layout_marginRight">@dimen/SevenMargin</item>
-        <item name="android:background">@color/RadioColor</item>
-        <item name="android:fontFamily">serif-monospace</item>
-        <item name="android:padding">@dimen/Tweentydimen</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">@dimen/ThirtydimenText</item>
-        <item name="android:textStyle">bold</item>
     </style>
 
+    <!-- RadioGroup in activity_solve_problem/activity_solve_problem2 -->
     <style name="RadioGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerInParent">true</item>
         <item name="android:layout_marginTop">@dimen/Tweentydimen</item>
         <item name="android:layout_marginLeft">@dimen/Tentmargin</item>
@@ -67,23 +73,25 @@
         <item name="android:background">@color/RadioColor</item>
     </style>
 
-    <style name="RadioGroup2">
-        <item name="android:layout_centerInParent">true</item>
-        <item name="android:layout_marginTop">@dimen/Tweentydimen</item>
+    <!-- RadioGroup (landscape) -->
+    <style name="RadioGroup.Land">
         <item name="android:padding">@dimen/ThirtyMargin</item>
         <item name="android:layout_marginLeft">@dimen/FiveMargin</item>
         <item name="android:layout_marginRight">@dimen/FiveMargin</item>
-        <item name="android:layout_marginBottom">@dimen/FiveMargin</item>
-        <item name="android:background">@color/RadioColor</item>
     </style>
 
 
     <style name="ImageButton">
-        <item name="android:background">@color/transperent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/transparent</item>
         <item name="android:layout_centerHorizontal">true</item>
     </style>
 
+    <!-- Text on the top in the activity_main -->
     <style name="HelloText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/HelloText</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:textSize">@dimen/TweentyTwoText</item>
@@ -93,44 +101,50 @@
         <item name="android:layout_marginBottom">@dimen/Tentmargin</item>
     </style>
 
-    <style name="LandTextView">
-        <item name="android:textSize">@dimen/TweentyFiveText</item>
+    <!-- Text on the top (landscape) -->
+    <style name="HelloText.Land">
         <item name="android:layout_marginTop">@dimen/Tentmargin</item>
         <item name="android:layout_marginBottom">@dimen/Tentmargin</item>
-        <item name="android:textStyle">italic</item>
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:textColor">@color/HelloText</item>
-        <item name="android:fontFamily">serif-monospace</item>
     </style>
 
+    <!-- Text for the results of user`s answer -->
     <style name="TextResult">
-        <item name="android:fontFamily">serif-monospace</item>
-        <item name="android:textSize">@dimen/TweentyFiveText</item>
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginLeft">@dimen/marginResult</item>
-        <item name="android:textColor">@color/textresult</item>
-    </style>
-
-    <style name="TextResultLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">serif-monospace</item>
         <item name="android:textSize">@dimen/TweentydimenText</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:layout_below">@id/greetings</item>
         <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginStart">@dimen/marginResult</item>
         <item name="android:textColor">@color/textresult</item>
     </style>
 
-    <style name="MRadioButton">
+    <!-- Text for the results (landscape) -->
+    <style name="TextResult.Land">
+        <item name="android:textSize">@dimen/TweentydimenText</item>
+    </style>
+
+    <style name="QuestionsLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- RadioButtons/CheckBoxes style -->
+    <style name="MButton">
         <item name="android:padding">@dimen/Tentmargin</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/TweentyTwoText</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">serif-monospace</item>
-        <item name="android:layout_width">@dimen/match</item>
-        <item name="android:layout_height">@dimen/wrap</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:radioButtonStyle">@color/white</item>
     </style>
 
+    <!-- Part of the title in the activity_home -->
     <style name="WelcomeText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/FiftyText</item>
         <item name="android:textStyle">bold</item>
         <item name="android:text">@string/welcome</item>
@@ -140,17 +154,16 @@
         <item name="android:layout_centerInParent">true</item>
     </style>
 
-    <style name="WelcomeTextLand">
+    <!-- Part of the title (landscape) -->
+    <style name="WelcomeText.Land">
         <item name="android:textSize">@dimen/ThirtydimenText</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:text">@string/welcome</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:fontFamily">serif-monospace</item>
-        <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_below">@id/iconSher1</item>
     </style>
 
+    <!-- Part of the title in the activity_home -->
     <style name="QuizSherlock">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/TweentydimenText</item>
         <item name="android:textStyle">bold</item>
         <item name="android:text">@string/quiz</item>
@@ -160,18 +173,10 @@
         <item name="android:layout_centerHorizontal">true</item>
     </style>
 
-    <style name="QuizSherlockLand">
-        <item name="android:textSize">@dimen/TweentyFiveText</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:text">@string/quiz</item>
-        <item name="android:layout_below">@id/welcome</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:fontFamily">serif-monospace</item>
-        <item name="android:layout_centerHorizontal">true</item>
-    </style>
-
-
+    <!-- Place for the user to enter the name in activity_home -->
     <style name="EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/EighteenText</item>
         <item name="android:hint">@string/input_name</item>
         <item name="android:textAlignment">center</item>
@@ -181,46 +186,88 @@
         <item name="android:imeOptions">actionDone</item>
         <item name="android:singleLine">true</item>
         <item name="android:inputType">text</item>
+        <item name="android:fontFamily">sans-serif</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:textColorHint">@color/HintColor</item>
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="EditTextLand">
+    <!-- Place for the user to leave a message in the activity_comments  -->
+    <style name="EditText.Message">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/SixteenText</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+        <item name="android:maxLength">150</item>
+        <item name="android:hint">@string/hintcomment</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:layout_below">@id/suggestiontext</item>
+    </style>
+
+    <!-- Place for the user to answer the question in activity_solve_problem4 -->
+    <style name="EditText.Answer">
+        <item name="android:hint">@string/hintAnswer</item>
+        <item name="android:layout_below">@id/textView1</item>
+        <item name="android:ems">12</item>
         <item name="android:textSize">@dimen/EighteenText</item>
-        <item name="android:hint">@string/input_name</item>
-        <item name="android:textAlignment">center</item>
-        <item name="android:maxLength">20</item>
-        <item name="android:layout_below">@id/quiz</item>
-        <item name="android:imeOptions">actionDone</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:inputType">text</item>
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:textColorHint">@color/HintColor</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/value_100dp</item>
     </style>
 
+    <!-- Place for the user to answer the question (landscape) -->
+    <style name="EditText.Answer.Land">
+        <item name="android:hint">@string/hintAnswer</item>
+        <item name="android:textSize">@dimen/SixteenText</item>
+        <item name="android:layout_below">@id/textView1</item>
+        <item name="android:ems">15</item>
+        <item name="android:layout_margin">@dimen/value_100dp</item>
+    </style>
+
+    <!-- Style for Start button for the HomeActivity -->
     <style name="ButtonStart">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/start_button</item>
         <item name="android:textSize">@dimen/EighteenText</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginTop">@dimen/Thirty_Sevendimen</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_below">@id/namespace</item>
-        <item name="android:background">@color/ButtonColor</item>
+        <item name="android:background">@drawable/shape</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">serif-monospace</item>
     </style>
 
+    <!-- Style for Start button (landscape) -->
+    <style name="ButtonStart.Land">
+        <item name="android:textSize">@dimen/SixteenText</item>
+        <item name="android:layout_marginTop">@dimen/marginResult</item>
+        <item name="android:layout_marginBottom">@dimen/FiveMargin</item>
+        <item name="android:minWidth">@dimen/value_70dp</item>
+        <item name="android:minHeight">@dimen/minHeightButton</item>
+        <item name="android:layout_margin">@dimen/marginResult</item>
+    </style>
+
+    <!-- Style for Check button in activity_solve_problem3/activity_solve_problem4 -->
+    <style name="ButtonStart.Check">
+        <item name="android:layout_marginTop">@dimen/Tentmargin</item>
+        <item name="android:text">@string/check_button</item>
+        <item name="android:textSize">@dimen/SixteenText</item>
+        <item name="android:layout_below">@id/checkBoxGroup</item>
+    </style>
+
+    <!-- ClickMe Button on the bottom of the activity_main -->
     <style name="ImageClickMe">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/Tweentydimen</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_below">@id/buttonChoose3</item>
-        <item name="android:background">@color/transperent</item>
+        <item name="android:background">@color/transparent</item>
     </style>
 
-
+    <!-- ClickMe button Text style -->
     <style name="TextClickMe">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:layout_alignTop">@id/commentbutton</item>
         <item name="android:layout_marginTop">@dimen/Tweenty_Threedimen</item>
@@ -231,25 +278,10 @@
         <item name="android:text">@string/Click_me</item>
     </style>
 
-
-    <style name="ButtonStartLand">
-        <item name="android:text">@string/start_button</item>
-        <item name="android:textSize">@dimen/SixteenText</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:layout_marginTop">@dimen/marginResult</item>
-        <item name="android:layout_marginBottom">@dimen/FiveMargin</item>
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_below">@id/namespace</item>
-        <item name="android:background">@color/ButtonColor</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:fontFamily">serif-monospace</item>
-        <item name="android:minWidth">@dimen/minWidthButton</item>
-        <item name="android:minHeight">@dimen/minHeightButton</item>
-        <item name="android:layout_margin">@dimen/marginResult</item>
-    </style>
-
-
+    <!-- Style for Send Button for the Comments Activity -->
     <style name="ButtonSend">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/sendButton</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">@dimen/EighteenText</item>
@@ -261,7 +293,7 @@
         <item name="android:layout_margin">@dimen/Tweentydimen</item>
     </style>
 
-
+    <!-- String message in the Comments Activity -->
     <style name="Leavecomment">
         <item name="android:textSize">@dimen/EighteenText</item>
         <item name="android:fontFamily">serif-monospace</item>
@@ -272,14 +304,31 @@
         <item name="android:layout_marginTop">@dimen/commentmargin</item>
     </style>
 
+    <!-- Layout for CheckBoxes in the Comments Activity -->
     <style name="CheckBoxLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_below">@id/commenttext</item>
         <item name="android:layout_margin">@dimen/ThirtyMargin</item>
         <item name="android:orientation">vertical</item>
     </style>
 
+    <!-- Layout for CheckBoxes (landscape) -->
+    <style name="CheckBoxLayout.Land">
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- Layout for CheckBoxes in the SolveProblem3 Activity -->
+    <style name="CheckBoxLayout.Questions">
+        <item name="android:layout_below">@id/textView1</item>
+        <item name="android:layout_margin">@dimen/Tweentydimen</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
 
     <style name="textComments">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/EighteenText</item>
         <item name="android:layout_margin">@dimen/ThirtyMargin</item>
@@ -288,26 +337,26 @@
         <item name="android:text">@string/textComment</item>
     </style>
 
-    <style name="textComments2">
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">@dimen/EighteenText</item>
+    <style name="textComments.two">
         <item name="android:layout_marginLeft">@dimen/ThirtyMargin</item>
         <item name="android:layout_marginRight">@dimen/ThirtyMargin</item>
         <item name="android:layout_marginTop">@dimen/Tweentydimen</item>
         <item name="android:layout_marginBottom">@dimen/Tentmargin</item>
-        <item name="android:fontFamily">serif-monospace</item>
-        <item name="android:layout_centerHorizontal">true</item>
         <item name="android:text">@string/textComment2</item>
+        <item name="android:layout_below">@id/linearcommnet</item>
     </style>
 
 
     <style name="Choices">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">serif-monospace</item>
         <item name="android:textSize">@dimen/SixteenText</item>
         <item name="android:textStyle">bold</item>
     </style>
 
+    <!-- Style of the input name -->
     <style name="DetectiveName">
         <item name="android:textSize">@dimen/EighteenText</item>
         <item name="android:fontFamily">serif-monospace</item>
@@ -317,23 +366,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-
-    <style name="EditText2">
-        <item name="android:textSize">@dimen/SixteenText</item>
-        <item name="android:inputType">text</item>
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textAlignment">center</item>
-        <item name="android:layout_margin">@dimen/fab_margin</item>
-        <item name="android:maxLength">150</item>
-        <item name="android:hint">@string/hintcomment</item>
-        <item name="android:imeOptions">actionDone</item>
-        <item name="android:maxLines">3</item>
-        <item name="android:textColorHint">@color/HintColor</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:layout_below">@id/suggestiontext</item>
-    </style>
-
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
