@@ -1,4 +1,4 @@
-# Quiz Application [Detective]
+# Quiz App [Detective]
 
 ##### 3rd Project for [Android Basics Nanodegree by Google](https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803)
 
