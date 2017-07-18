@@ -16,8 +16,8 @@ Main screen if it is correct or no.
 9. The app works in landscape mode as well.
 
 ## Screenshots:
-![image1](http://www.simpleimageresizer.com/_uploads/photos/134ba78a/screen1_4_20.jpg)
-![image2](http://www.simpleimageresizer.com/_uploads/photos/134ba78a/screen2_20.jpg)
-![image3](http://www.simpleimageresizer.com/_uploads/photos/134ba78a/screen3_20.jpg)
+![sherlock1](https://user-images.githubusercontent.com/25595009/28312198-98463fb2-6bb2-11e7-8728-b385d358176d.jpg)
+![sherlock2](https://user-images.githubusercontent.com/25595009/28312265-d3339304-6bb2-11e7-947e-c8583efc50d5.jpg)
+![sherlock3](https://user-images.githubusercontent.com/25595009/28312266-d3502866-6bb2-11e7-9ff3-ff2110da8078.jpg)
 
 
